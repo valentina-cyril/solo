@@ -1,0 +1,501 @@
+/**?bootstrap grid/*/
+    /*mobilemenu*/
+
+    .navbar-header{
+        position: relative;
+    }
+ #mobile-nav-open-btn{
+     font-size: 30px;
+     color: #f4c613;
+     cursor: pointer;
+     z-index: 2;
+     position: absolute;
+     right: 0;
+     top: 6;
+
+     display: none;
+ }     
+ #mobile-nav{
+     height: 0%;
+     width:100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 3;
+     background-color: rgba(255, 255, 255, .9);
+     -webkit-transition: all 300ms linear;
+     transition: all 300ms linear;
+     overflow-y: hidden;
+ }  
+
+ #mobile-nav-close-btn{
+
+    font-family: "Raleway",sans-serif;
+    font-size: 70px;
+    color: #212226;
+    font-weight: 400;
+    cursor: pointer;
+    position: absolute;
+    top:-9px;
+    right: 13px;
+    -webkit-transition: .3s;
+    transition: .3s;
+ }
+
+
+#mobile-nav-content{
+    text-align: center;
+    width:100%;
+    margin-top: 30px;
+    position: absolute;
+    top: 60px;
+
+}
+
+#mobile-nav ul li {
+    margin-bottom: 20px;
+}
+
+
+
+
+#mobile-nav a{
+    font-family: "Raleway",sans-serif;
+    font-size: 18px;
+    color: #212226;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+#mobile-nav a:hover,
+#mobile-nav a:focus{
+    color: #f4c613;
+    background: none;
+}
+
+#mobile-nav-close-btn:hover,
+#mobile-nav-close-btn:focus{
+    color: #f4c613;
+}
+
+
+.white-nav-top #mobile-nav ul.nav>li.active>a{
+    color: #f4c613;
+    font-weight: 500;
+} 
+/******larg devices******/
+@media (min-width: 1200px) and (max-width: 1300px){
+
+    .site-nav-wraper{
+        padding: 0 20px;
+    }
+
+
+}
+
+
+
+
+
+
+/*******medium devices*********/
+@media (min-width:992px) and (max-width: 1199px){
+    .site-nav-wraper{
+        padding: 0;
+    }
+    
+    .vertical-heading h2{
+        font-size: 29px;
+    }
+    #services-tabs .tab-bg{
+        padding: 16px 30px;
+        min-height: 289px;
+    }
+    .service-tab p{
+        line-height: 20px;
+    }
+}
+
+/********smalll devices*******/
+@media (min-width:768px) and (max-width: 991px){
+    .site-nav-wraper{
+        padding: 0;
+    }
+
+    #home-heading h1{
+        font-size: 41px;
+    }
+    #hometxt p{
+        font-size: 13px;
+    }
+
+    .btn-general{
+        padding: 8px 35px 8px 35px;
+        font-size: 10px;
+
+    }
+    .vertical-heading h2{
+        font-size: 29px;
+    }
+    #tech-statement h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .r-tabs-accordion-title{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .r-tabs-accordion-title a{
+        font-family: "Raleway"sans-serif;
+        font-size: 13px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+    .r-tabs-accordion-title.r-tabs-state-active a{
+        color: #f4c613;
+        font-weight: 700;
+        border-bottom: 3px solid #f4c613;
+        padding-bottom: 5px;
+        -webkit-transition: border-color 300ms linear;
+        transition: border-color 300ms linear;
+    }
+    .pricetable .price h2{
+        margin: 0 0 0 6px;
+        font-size: 35px;
+
+    }
+    .blog-post .post-meta p{
+        line-height: 14px;
+
+    }
+    .stats-item p {
+        line-height: 18px;
+    }
+
+    ul.office-details li i { 
+
+        width:25px;
+    }
+    ul.office-details li {
+        margin-right: 15px;
+    }
+}
+/****extrasmalll devices*****/
+@media  (max-width: 767px){
+
+    #home-heading h1{
+        font-size: 22px;
+    }
+    #hometxt p{
+        font-size: 13px;
+        line-height: 18px;
+        margin: 8px 2px 30px 2px ;
+    }
+    .navbar{
+        padding: 20px 0;
+    }
+    .site-nav-wraper,.white-nav-top{
+        padding: 0;
+    }
+    .btn-general{
+        padding: 8px 25px 8px 25px;
+        font-size: 10px;
+
+    }
+    .boxlg{
+        padding: 90px 0;
+
+    }
+
+    .vertical-heading{
+        text-align: center;
+
+    }
+
+    .vertical-heading h5{
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+        display: block;
+        position: static;
+        margin-bottom: 15px;
+    }
+    .vertical-heading h2{
+        font-size: 29px;
+        line-height: normal;
+        margin: 0;
+
+    }
+    #about-left{
+        margin-bottom: 70px;
+    }
+    #about-right{
+        margin-top: 50px;
+        text-align: center;
+    }
+    .content-box-md{
+        padding: 80px 0;
+    }
+     
+
+    .about-item{
+        padding: 55px 30px;
+        margin-bottom: 35px;
+    }
+    .about-item i{
+        font-size: 30px;
+    }
+
+    .about-item h3{
+        font-size: 18px;
+    }
+
+    #team-left .vertical-heading{
+        min-height: 130px;
+    }
+
+    .skill h4{
+        font-size: 14px;
+        line-height: 35px;
+    }
+
+    #tech-statement h3 {
+        font-size: 18;
+        line-height: 28px; 
+    }
+
+    .horizontal-heading{
+        margin-bottom: 40px;
+    }
+
+    .horizontal-heading h2 {
+        font-size: 30px;
+    }
+
+
+    #services-01 img {
+        margin: 35px 0;
+    }
+    .services, .services .icon {
+        text-align: center;
+    }
+    .services h4{
+        font-size: 18px;
+    }
+
+    .r-tabs-accordion-title{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .r-tabs-accordion-title a{
+        font-family: "Raleway"sans-serif;
+        font-size: 13px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+    .r-tabs-accordion-title.r-tabs-state-active a{
+        color: #f4c613;
+        font-weight: 700;
+        border-bottom: 3px solid #f4c613;
+        padding-bottom: 5px;
+        -webkit-transition: border-color 300ms linear;
+        transition: border-color 300ms linear;
+    }
+
+    #services-tabs .tab-bg{
+        text-align: center;
+        padding: 40px 30px;
+    }
+
+
+    #services-tabs h2{
+        font-size: 40px;
+    }
+
+    #services-tabs h3{
+        font-size: 23px;
+    }
+
+
+    #portfolio{
+        padding: 0;
+    }
+
+    #isotope-filters button {
+        padding-right: 15px;
+    }
+
+
+
+    #testimonials {
+        padding-top: 45px;
+    }
+
+
+    #testimonial-slider {
+        top: 0;
+    }
+
+    #testimonials .vertical-heading{
+        padding: 0;
+    }
+    .testimonial .row{
+        margin: 0;
+    }
+    .testimonial h3{
+        font-size: 20px;
+    }
+
+    .testimonial .stars{
+        font-size: 16px;
+    }
+
+    .author img{
+        width: 80px !important;
+    }
+
+    .pricetable{
+        margin-bottom: 30px;
+    }
+
+
+    .pricetable .price h2{
+        font-size: 28px;
+        margin: 0 0 0 16px;
+    }
+
+    .stats-item{
+        margin-bottom: 20px;
+        padding: 25px 5px;
+    }
+    .stats-item i {
+        font-size: 30px;
+    }
+
+    .stats-item h3{
+        font-size: 24px;
+    }
+
+    #blog-left{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .blog-post{
+        margin-bottom: 25px;
+    }
+        /*contact*/
+
+
+    #contact-left{
+        text-align: center;
+    }
+    .office{
+        margin-bottom: 40px;
+    }
+    ul.office-details li{
+        display: block;
+        margin-top: 25px;
+    }
+
+    ul.office-details li i{
+        width: auto;
+        display: block;
+        margin-bottom: 3px;
+    }
+    ul.social-list{
+        margin-bottom: 40px;
+    }
+    #mobile-nav-open-btn{
+        display: block;
+    }     
+
+
+
+}
+
+
+
+
+/****extrasmalll devices*****/
+@media  (max-width: 480px){
+    #home-heading h1{
+        font-size: 18px;
+    }
+    #hometxt p{
+        font-size: 11px;
+        line-height: 16px;
+        margin: 8px 10px 25px 10px ;
+    }
+
+    .vertical-heading h2{
+        font-size: 22px;
+
+    }
+    #isotope-filters {
+        text-align: center;
+    }
+
+    #isotope-filters button {
+        font-size: 10px;
+        padding-right: 13px;
+    }
+
+    .testimonial .row{
+        margin: 0;
+    }
+
+    .testimonial h3{
+        font-size: 14px;
+       line-height: 18px;
+    }
+
+    .testimonial .stars{
+        font-size: 13px;
+    }
+
+     
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
